@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/estilo.css">
     <title>Faça sua criptografia</title>
+    <script src="./funcionalidades.js"></script>
 </head>
 <body>
+
     <header>
         <img class="cabecalho" src="./assets/Logo.png" alt="logo da alura"> 
     </header>
@@ -18,7 +21,7 @@
         <section class="texto">
             <h1 class="titulos"> Digite seu texto </h1>
             <div class="insert">
-
+               <textarea type="text" name="Digite" id="recebetexto" cols="55" rows="20"></textarea>
             </div>
             <div class="informacao">
                
@@ -26,29 +29,30 @@
                 <p> letras minúsculas e sem acento.</p>
               
             </div>
-            <a class="buttons_texto">Criptografar</a>
-            <a class="buttons_texto">Descriptografar</a>
-     
-               
+             <button type="submit" class="buttons_texto" onclick="criptografar()">Criptografar</button>
+             <button type="submit" class="buttons_texto" onclick="descriptografar()">Descriptografar</button>
         
         </section>
 
-        <section class="copia"> 
-            <div>
+    
+        <section id="copia" class="copia"> 
+            <div id="img">
                 <img src="./assets/High quality products 1 1.jpg" alt="jovem com uma lupa">
-                <div class="semresposta_titulo"><h3> Nenhuma mensagem encontrada</h3></div>
-                <div class="semresposta_texto"><p>Digite um texto que você deseja criptografar ou descriptografar.</p></div>
-                <a class="buttons_texto">Copiar</a>
-            </div>
-      
+           </div>
+               <div id="msg" class="semresposta_titulo"><h3> Nenhuma mensagem encontrada</h3></div>
+               <div id="sub" class="semresposta_texto"><p>Digite um texto que você deseja criptografar ou descriptografar.</p></div>
+               <input hidden id="input" type="text" value="">
+    
+           <div class="botaocopy" >
+            <button hidden id="copiar" type="submit" class="buttons_texto" onclick="copiar()">Copiar</button>          
+        </div>
         </section>
-        
+ 
       
     </main>
 
     <footer class="rodape">
         <p>Desenvolvido por Andressa SM Pacheco</p>
     </footer>
-    
 </body>
 </html>

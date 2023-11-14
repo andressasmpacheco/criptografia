@@ -28,26 +28,49 @@
 .titulos{
     color: #0A3871;
     font-size: 32px;
-    margin-bottom: 130%;
-   
-   
+    margin-bottom:1% ;
 }
 
+textarea{
+    background-color:#F3F5FC ;
+    border: none;
+    outline-color: #0A3871;
+    outline-width: 0.25px;
+    border-radius: 12px;
+    outline-style: none;
+    text-indent: 1%;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: #0A3871;
+    
+}
 
+input{
+    color: #0A3871;
+    border: none;
+    outline-style: none;
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+}
 .texto{
    
     color: #0A3871;
     font-size: 32px;
     margin-left: 10%;
 
+
 }
+
 
 .copia{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    text-align: center;
     border-radius: 12px;
+    width: 500px;
+    height: 450px;
+    text-align: center;
     color: #343A40;
     font-size: 32px;
     margin-bottom: 2.5%;
@@ -83,13 +106,20 @@ border-radius: 24px;
 padding: 7px;
 
 }
-
+.botaocopy{
+    margin-top: 60%;
+    margin-left: 40%;
+}
 .buttons_texto:hover{
     background-color: #c6cbd1;
 }
 
 .rodape{
-    background-color: aqua;
-    text-align: center;
-   /* padding: 1%;*/
-}
+        background-color: aqua;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 0.25%;
+    }
+    
